@@ -1,12 +1,12 @@
 {
   "name": "api-biblioteca-jwt",
   "version": "1.0.0",
-  "description": "Projeto desenvolvido em Node.js, Express, MongoDB e Mongoose para praticar autenticação com JWT, rotas protegidas, usuários ativos, regras de negócio e organização profissional em camadas.",
+  "description": "top",
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "nodemon server.js"
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

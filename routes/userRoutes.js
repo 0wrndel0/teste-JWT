@@ -15,3 +15,4 @@ router.patch("/:id/deactivate", authMiddleware, adminMiddleware, userController.
 router.patch("/:id/activate", authMiddleware, adminMiddleware, userController.activateUser);
 
 export default router;
+ 

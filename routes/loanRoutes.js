@@ -6,9 +6,9 @@ import adminMiddleware from "../middlewares/adminMiddleware.js";
 const router = express.Router();
 
 router.post("/", authMiddleware, loanController.createLoan);
-router.get("/my", authMiddleware, loanController.getMyLoans);
+router.get("/me", authMiddleware, loanController.getMyLoans);
 
-router.get("/", authMiddleware, adminMiddleware, loanController.getAllLoans);
+router.get("/", authMiddleware, adminMiddleware,  loanController.getAllLoans);
 router.get("/user/:userId", authMiddleware, adminMiddleware, loanController.getLoansByUser);
 router.get("/active", authMiddleware, adminMiddleware, loanController.getActiveLoans);
 router.get("/overdue", authMiddleware, adminMiddleware, loanController.getOverdueLoans);
